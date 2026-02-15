@@ -1,0 +1,22 @@
+{
+  "name": "oh-reviewer",
+  "description": "GitHub App used by OpenHands PR reviewer workflows to mint short-lived installation tokens inside GitHub Actions.",
+  "url": "https://github.com/enyst/openhands-reviewer",
+  "hook_attributes": {
+    "url": "https://example.com/openhands-reviewer-webhook",
+    "active": false
+  },
+  "public": false,
+  "default_permissions": {
+    "contents": "read",
+    "issues": "write",
+    "metadata": "read",
+    "pull_requests": "write"
+  },
+  "default_events": [
+    "pull_request",
+    "pull_request_review",
+    "issue_comment"
+  ],
+  "request_oauth_on_install": false
+}
